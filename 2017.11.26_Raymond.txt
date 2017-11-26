@@ -1,0 +1,4 @@
+目標：
+    詳讀Heavy-Hitter (deadline 12/8)
+進度：
+    暫時擱置，打Machine Learning (11/27) 和 Database (12/3) Project
