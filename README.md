@@ -6,6 +6,7 @@ This code uses device model "MCU\_board" as an example, that is, the IDFs/ODFs a
 
 
 def odf():  # int only
+
     return [
      	('D2', 0, 'D2'),     #ODF_name, dimension, Variable_name in Bridge
         
@@ -41,6 +42,4 @@ def idf():
        ('A4', int),
        
        ('A5', int),
-       
-       
-]
+       ]
