@@ -11,18 +11,18 @@ def odf():  # int only
       ('D2', 0, 'D2'),     #ODF_name, dimension, Variable_name in Bridge
       ('D3', 0, 'D3'),
       ('D4', 0, 'D4'),
-      ('D5\~PWM', 0, 'D5\~PWM'),
-      ('D6\~PWM', 0, 'D6\~PWM'),
+      ('D5~PWM', 0, 'D5~PWM'),
+      ('D6~PWM', 0, 'D6~PWM'),
       ('D7', 0, 'D7'),
       ('D8', 0, 'D8'),
-      ('D9\~PWM', 0, 'D9\~PWM'),
+      ('D9~PWM', 0, 'D9~PWM'),
     ]
     
 
 def idf():
 
     return [
-       ('A0', int),        #IDF\_name, Variable\_type
+       ('A0', int),        #IDF_name, Variable_type
        ('A1', int),
        ('A2', int),
        ('A3', int),
