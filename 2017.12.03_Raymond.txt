@@ -1,5 +1,0 @@
-目標：
-     詳讀Heavy-Hitter (deadline 12/8)
-進度：
-     1. 已讀完論文至第四章節
-     2. 嘗試用P4 16語言並參考實驗室的disaggregate spec 改寫成P4 16版本，找出尚未理解的P4語言細節
