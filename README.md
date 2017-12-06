@@ -1,8 +1,6 @@
 ArduinoYun DA for IoTtalk v2
 
-Stably works if total DF Join links < 4. To use this code, only "custom.py" needs to be modified.
-
-This code uses device model "MCU\_board" as an example, that is, the IDFs/ODFs are
+To use this code, only "custom.py" needs to be modified. This code uses device model "MCU\_board" as an example, that is, the IDFs/ODFs are
 
 
 def odf():  # int only
