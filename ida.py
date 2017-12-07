@@ -36,7 +36,6 @@ class app(dict):
     device_model = custom.device_model
     device_addr = "{:012X}".format(getnode())
     username = custom.username   # optional
-    print username
     push_interval = custom.Comm_interval  # global interval
 
     idf_list = [t[0] for t in idfInfo]
