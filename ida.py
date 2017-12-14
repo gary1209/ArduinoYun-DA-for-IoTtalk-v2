@@ -100,9 +100,9 @@ class app(dict):
       
         os.system(r'echo "none" > /sys/class/leds/ds:green:wlan/trigger')
 
-LifeCycle=0
+
 def Bridge2Arduino():
-    global incomming, ODFcache, IDFcache, timestamp, IDFsignal, LifeCycle
+    global incomming, ODFcache, IDFcache, timestamp, IDFsignal
 
     BClient = BridgeClient()
    
@@ -157,8 +157,7 @@ def Bridge2Arduino():
                             IDFcache[IDF[0]].put(v)
             timestamp = time.time()        
 
-    LifeCycle = (LifeCycle+1) % 10000
-    print ('Lifecycle:', LifeCycle)
+
 
 
 
