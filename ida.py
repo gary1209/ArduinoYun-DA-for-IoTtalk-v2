@@ -47,7 +47,6 @@ class app(dict):
             odf2Bridge[t[0]].append([t[1], t[2]])
 
     def __init__(self):	
-                                                                                                                                                
         for DF in idfInfo:
             function_name = DF[0].replace('-','_')
             self.__dict__[function_name] = partial(self.forIDF, DF[0])
