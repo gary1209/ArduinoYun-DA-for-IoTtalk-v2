@@ -100,11 +100,9 @@ class app(dict):
       
         os.system(r'echo "none" > /sys/class/leds/ds:green:wlan/trigger')
 
-
+BClient = BridgeClient()
 def Bridge2Arduino():
     global incomming, ODFcache, IDFcache, timestamp, IDFsignal
-
-    BClient = BridgeClient()
    
     BridgeCycle = 0
     while BridgeCycle < 10: 
