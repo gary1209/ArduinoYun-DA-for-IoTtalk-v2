@@ -13,5 +13,6 @@ while True:
         time.sleep(1)
     subprocess.Popen.kill(p)
     timestamp = time.time()
-    print('Restarting...')
     print
+    print('Restarting...')
+
