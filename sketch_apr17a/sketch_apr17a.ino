@@ -127,37 +127,37 @@ void loop() {
     itoa(valueInt, valueStr, 10); 
     Bridge.put("A0", valueStr);
     itoa( (outcomming_A0=outcomming_A0^1), outcome, 10);
-    Bridge.put("outcomming_A0", outcome);
+    //Bridge.put("outcomming_A0", outcome);
 
     valueInt = analogRead(1);
     itoa(valueInt, valueStr, 10); 
     Bridge.put("A1", valueStr);
     itoa( (outcomming_A1=outcomming_A1^1), outcome, 10);
-    Bridge.put("outcomming_A1", outcome);
+    //Bridge.put("outcomming_A1", outcome);
 
     valueInt = analogRead(2);
     itoa(valueInt, valueStr, 10); 
     Bridge.put("A2", valueStr);
     itoa( (outcomming_A2=outcomming_A2^1), outcome, 10);
-    Bridge.put("outcomming_A2", outcome);
+    //Bridge.put("outcomming_A2", outcome);
 
     valueInt = analogRead(3);
     itoa(valueInt, valueStr, 10); 
     Bridge.put("A3", valueStr);
     itoa( (outcomming_A3=outcomming_A3^1), outcome, 10);
-    Bridge.put("outcomming_A3", outcome);
+    //Bridge.put("outcomming_A3", outcome);
 
     valueInt = analogRead(4);
     itoa(valueInt, valueStr, 10); 
     Bridge.put("A4", valueStr);
     itoa( (outcomming_A4=outcomming_A4^1), outcome, 10);
-    Bridge.put("outcomming_A4", outcome);      
+    //Bridge.put("outcomming_A4", outcome);      
 
     valueInt = analogRead(5);
     itoa(valueInt, valueStr, 10); 
     Bridge.put("A5", valueStr);
     itoa( (outcomming_A5=outcomming_A5^1), outcome, 10);
-    Bridge.put("outcomming_A5", outcome);    
+    //Bridge.put("outcomming_A5", outcome);    
 
     delay(10);
 }
