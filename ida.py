@@ -1,11 +1,8 @@
 from functools import partial
 from uuid import getnode
-import time
+import os, Queue, sys, time 
 from dan import NoData
 import custom
-import sys
-import os
-import Queue
 
 sys.path.insert(0, '/usr/lib/python2.7/bridge/')
 from bridgeclient import BridgeClient
@@ -21,10 +18,8 @@ for f_name in [t[0] for t in odfInfo]:
     incomming[f_name] = 0
 timestamp = time.time()
 
-
 os.system(r'echo "none" > /sys/class/leds/ds:green:usb/trigger')
 os.system(r'echo "none" > /sys/class/leds/ds:green:wlan/trigger')
-
 
 class app(dict):
     global ODFcache, IDFcache, odf2Bridge
@@ -66,7 +61,6 @@ class app(dict):
         print('Detected odf:')
         for odf in self.odf_list:
             print('    {}'.format(odf))
-                                            
             
     @staticmethod
     def forIDF(idf_name):
@@ -150,8 +144,3 @@ def Bridge2Arduino():
                         else:
                             IDFcache[IDF[0]].put(v)
             timestamp = time.time()        
-
-
-
-
-
