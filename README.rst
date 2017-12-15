@@ -2,7 +2,7 @@ ArduinoYun DA for IoTtalk v2
 ============================
 
 To use this code, only ``custom.py`` needs to be modified.
-This code uses device model ``MCU\_board`` as an example, that is, the IDFs/ODFs are
+This code uses device model ``MCU_board`` as an example, that is, the IDFs/ODFs are
 
 .. code-block:: python
 
