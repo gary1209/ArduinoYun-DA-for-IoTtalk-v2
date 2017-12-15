@@ -157,11 +157,9 @@ def main(app):
 
     atexit.register(deregister)
         
-    while True:
-        ida.Bridge2Arduino()
-        time.sleep(0.01)
-        
-    signal.pause()
+    ida.Bridge2Arduino()
+    
+    #signal.pause()
 
 if __name__ == '__main__':
     if len(sys.argv) == 1:
