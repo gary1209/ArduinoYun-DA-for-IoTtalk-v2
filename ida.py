@@ -3,7 +3,6 @@ from uuid import getnode
 import time
 from dan import NoData
 import custom
-import signal
 import sys
 import os
 import Queue
@@ -103,11 +102,8 @@ class app(dict):
 BClient = BridgeClient()
 def Bridge2Arduino():
     global incomming, ODFcache, IDFcache, timestamp, IDFsignal
-   
-    BridgeCycle = 0
-    while BridgeCycle < 10: 
-        BridgeCycle += 1 
 
+    while True: 
         for ODF in ODFcache:
             if ODFcache[ODF].qsize():	
                 data = ODFcache[ODF].get()
