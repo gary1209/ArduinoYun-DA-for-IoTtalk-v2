@@ -1,9 +1,9 @@
 
 
-ServerIP = 'IoTtalk Ver. 2 Server IP'
+ServerIP = 'http://garden2.iottalk.tw/csm'
 device_model ='MCU_board'
-device_name = None
-username = None
+device_name = 'Snow'
+username = 'gary'
 Comm_interval = 0.5  # unit:second
 
 def odf():  # int only
@@ -20,10 +20,10 @@ def odf():  # int only
 
 def idf():
     return [
-       ('A0', int),
-       ('A1', int),
-       ('A2', int),
-       ('A3', int),
-       ('A4', int),
-       ('A5', int),
+      # ('A0', int),
+      # ('A1', int),
+      # ('A2', int),
+      # ('A3', int),
+      # ('A4', int),
+      # ('A5', int),
     ]

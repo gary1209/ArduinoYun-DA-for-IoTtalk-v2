@@ -64,13 +64,9 @@ def main(app):
     app = app.app # here
 
     global _devices, _interval
-    host = app.__dict__.get('host')
-    if host is None:
+    api_url = app.__dict__.get('api_url')
+    if api_url is None:
         raise RegistrationError('host not given.')
-
-    port = app.__dict__.get('port')
-    if port is None:
-        port = 9992
 
     from uuid import UUID
     device_addr = app.__dict__.get('device_addr')
@@ -139,9 +135,8 @@ def main(app):
             raise RegistrationError('unknown odf_list, usage: [df_name, ...]')
 
     
-
     context = register(
-        'http://{}:{}'.format(host, port),
+        api_url,
         on_signal=on_signal,
         on_data=on_data,
         accept_protos=['mqtt'],
@@ -151,7 +146,6 @@ def main(app):
         name=device_name,
         profile={
             'model': device_model,
-            'u_name': username,
         },
     )
 

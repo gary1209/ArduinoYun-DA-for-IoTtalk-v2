@@ -26,7 +26,7 @@ os.system(r'echo "none" > /sys/class/leds/ds:green:wlan/trigger')
 class app(dict):
     global ODFcache, IDFcache, odf2Bridge
 
-    host = custom.ServerIP
+    api_url = custom.ServerIP
     device_name = custom.device_name
     device_model = custom.device_model
     device_addr = "{:012X}".format(getnode())
