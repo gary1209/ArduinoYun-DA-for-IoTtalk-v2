@@ -149,7 +149,7 @@ def main(app):
         },
     )
 
-    atexit.register(deregister)
+    # atexit.register(deregister)
         
     ida.Bridge2Arduino()
         
